@@ -19,6 +19,7 @@ Fragen Claude:
     * Topics
     * Foreign Keys
     * Wie die Sachdaten-Objekte bei jedem Import komplett löschen und wieder einfügen? Möglichst transaktional - Sprich Abbruch des Löschens mit Fehlermeldung, falls die Referenzen nicht stimmen.
+    * Wie wird eine zwingende 1:1 Beziehung von ili2pg auf der Datenbank umgesetzt - Falls nicht schnell mit Claude zu klären -> ausprobieren.
 
 
 Fragen Markus:
