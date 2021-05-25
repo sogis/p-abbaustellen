@@ -1,0 +1,38 @@
+@startuml
+node Abbaustellen {
+	[Client] as cl
+    
+    together {
+      [Server] as srv
+      () "HTTPS" as srvi
+      srv -right- srvi
+    }
+    
+    cl -- srv
+}
+
+node GDI {
+	[Web GIS Client] as wgc
+    () "URL open" as wgci
+    wgc -left- wgci
+    
+    [GRETL] as gretl
+    [QGIS] as qgis
+    
+    database "Publikation" {
+    	[Abbaustellen\n(Polygon mit Attributen)] as ds_all
+    }
+    
+    database "Erfassung" {
+    	[Abbaustellen\n(Polygon mit ID)] as ds_geo
+    }
+    
+    qgis -- ds_geo
+    gretl -- ds_geo
+    gretl -- ds_all
+    wgc -- ds_all
+}
+
+cl -- wgci
+srvi -- gretl
+@enduml

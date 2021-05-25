@@ -25,6 +25,14 @@ Fragen Claude:
 Fragen Markus:
 
 * Arbeitsablauf: Copy-Paste der Polygon-ID von QGIS nach Abbaustellen
+    * Ist OK - UUID wir kopiert
 * Multipolygone?
+    * Ja, sind vorzusehen
 * Ein "Knopf", welcher gleich auch publiziert, oder?
+    * Ja
+* Nach welchen Attributen wird Dargestellt
+    * Nach dem Attribut "Stand". Dieses ist bereits Teil der der zu übertragenden Attribute.
+* Datenmigration?
+    * GIS-seitig werden die Polygone automatisch migriert
+    * Ergänzung, Verknüpfung muss manuell vom AfU gemacht werden.
 
