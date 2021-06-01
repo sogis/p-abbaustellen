@@ -1,0 +1,11 @@
+version: "3"
+services:
+  databases:
+    image: postgis/postgis:11-2.5-alpine
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./gitignored/.pgdata:/var/lib/postgresql/data/pgdata"
