@@ -7,6 +7,14 @@ Um zu prüfen, ob unser Verständnis bezüglich externer Referenzen sowie der Pr
 * Geometrietabelle umfasst zwei Polygone
 * Importversuch mit 2, 1 und 3 Abbaustellen-Objekten
 
+### Inhalt der Geometrietabelle
+
+Die Geometrietabelle umfasst zwei Polygone - siehe [geodata_exported.xtf](geodata_exported.xtf)
+
+Screenshot DB-Select:
+
+![geometrie](geometrie.png)
+
 ## Import mit 2 Abbaustellen-Objekten
 
 Verwendung des xtf appdata_app2geo2.xtf

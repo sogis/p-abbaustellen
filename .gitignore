@@ -1,0 +1,2 @@
+# anything under a gitignored folder
+**/gitignored/**
