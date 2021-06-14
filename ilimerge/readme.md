@@ -15,7 +15,7 @@ Screenshot DB-Select:
 
 ![geometrie](geometrie.png)
 
-## Import mit 2 Abbaustellen-Objekten
+## Import 1 (mit 2 Abbaustellen-Objekten)
 
 Verwendung des xtf appdata_app2geo2.xtf
 
@@ -65,7 +65,7 @@ Wie erwartet flutschen die Daten rein, da die beiden Tabellen je zwei Objekte en
     Info:       2 objects in CLASS SO_AGI_MERGETEST.Abbaustellen.Abbaustelle
     Info: ...replace done
 
-## Import mit 1 Abbaustellen-Objekt
+## Import 2 (mit 1 Abbaustellen-Objekt)
 
 Der Import läuft durch, obwohl nach dem Import eine Geometrie-Objekt auf kein Abbaustellen-Objekt referenziert:
 
@@ -113,7 +113,7 @@ Der Import läuft durch, obwohl nach dem Import eine Geometrie-Objekt auf kein A
     Info:       1 objects in CLASS SO_AGI_MERGETEST.Abbaustellen.Abbaustelle
     Info: ...replace done
 
-## Import mit 3 Abbaustellen-Objekten
+## Import 3 (mit 3 Abbaustellen-Objekten)
 
 Der Import wird wie erwartet abgebrochen, da ein Abbaustellen-Objekt kein Geometrie-Objekt referenziert:
 
@@ -166,4 +166,57 @@ Der Import wird wie erwartet abgebrochen, da ein Abbaustellen-Objekt kein Geomet
 
 * Ist etwas an der Übungsanlage nicht korrekt?
 * Wie muss vorgegangen werden, damit auch der Import mit einem Abbaustellen-Objekt eine "dangling reference" reklamiert und abbricht?
+
+## Antworten
+
+Die Übungsanlage zeigt anschaulich, dass sich die Validierungen des ilivalidator und von ili2pg unterscheiden.
+
+* Import 3 bricht ab, da der FK auf der Datenbank nicht erfüllt wird
+* Import 1 bricht nicht ab, da für die eingeschränkte Sicht der Datenbank hier alles in Ordnung zu sein scheint (referentielle Integrität auf der DB ist nicht verletzt)
+
+Bei der vollen Validierung mit zwei Datenfiles ([validate.sh](validate.sh)) wird bei der Datenkonstellation von Import 1 wie erwartet der entsprechende Fehler angegeben:
+
+
+
+    bjsvwjek@JOS:~/code/p-abbaustellen/ilimerge$ ./validate.sh 
+    Info: ilivalidator-1.11.10-61c230a3331fd24f2c1dc841ee9519e191915440
+    Info: ili2c-5.2.2-c48675a2ecb4cf824bcbdcaa76abfdb10bea327e
+    Info: iox-ili-1.21.6-4c681c10b36fc582a611709d0ee9bf426177876f
+    Info: User <bjsvwjek>
+    Info: Start date 2021-06-14 14:57
+    Info: maxMemory 4073472 KB
+    Info: dataFile </home/bjsvwjek/code/p-abbaustellen/ilimerge/geodata_exported.xtf>
+    Info: dataFile </home/bjsvwjek/code/p-abbaustellen/ilimerge/appdata_app1geo2.xtf>
+    Info: pluginFolder </home/bjsvwjek/tools/ilivalidator-1.11.10/plugins>
+    Info: modeldir <%ITF_DIR;http://models.interlis.ch/;%JAR_DIR/ilimodels>
+    Info: lookup model <Units> 2.3 in repository </home/bjsvwjek/code/p-abbaustellen/ilimerge/>
+    Info: lookup model <Units> 2.3 in repository <http://models.interlis.ch/>
+    Info: lookup model <CoordSys> 2.3 in repository </home/bjsvwjek/code/p-abbaustellen/ilimerge/>
+    Info: lookup model <CoordSys> 2.3 in repository <http://models.interlis.ch/>
+    Info: lookup model <GeometryCHLV03_V1> 2.3 in repository </home/bjsvwjek/code/p-abbaustellen/ilimerge/>
+    Info: lookup model <GeometryCHLV03_V1> 2.3 in repository <http://models.interlis.ch/>
+    Info: lookup model <GeometryCHLV03_V1> 2.3 in repository </home/bjsvwjek/tools/ilivalidator-1.11.10/ilimodels/>
+    Warning: Folder /home/bjsvwjek/tools/ilivalidator-1.11.10/ilimodels doesn't exist; ignored
+    Info: lookup model <GeometryCHLV03_V1> 2.3 in repository <http://models.geo.admin.ch/>
+    Info: lookup model <SO_AGI_MERGETEST> 2.3 in repository </home/bjsvwjek/code/p-abbaustellen/ilimerge/>
+    Info: ilifile </home/bjsvwjek/.ilicache/models.interlis.ch/refhb23/Units-20120220.ili>
+    Info: ilifile </home/bjsvwjek/.ilicache/models.interlis.ch/refhb23/CoordSys-20151124.ili>
+    Info: ilifile </home/bjsvwjek/.ilicache/models.geo.admin.ch/CH/CHBase_Part1_GEOMETRY_V1.ili>
+    Info: ilifile </home/bjsvwjek/code/p-abbaustellen/ilimerge/model.ili>
+    Info: validate data...
+    Info: assume unknown external objects
+    Info: first validation pass...
+    Info: first validation pass...
+    Info: second validation pass...
+    Info: validate multiplicity of role SO_AGI_MERGETEST.Abbaustellen.Abbaustelle_Geometrie.Abbaustelle...
+    Error: line 6: SO_AGI_MERGETEST.Abbaustellen.Geometrie: tid f50aff6a-0bec-4750-8f4d-3000b8aa6bb6: Abbaustelle should associate 1 to 1 target objects (instead of 0)
+    Info: validate target of role SO_AGI_MERGETEST.Abbaustellen.Abbaustelle_Geometrie.Geometrie...
+    Info: validate multiplicity of role SO_AGI_MERGETEST.Abbaustellen.Abbaustelle_Geometrie.Geometrie...
+    Info: /home/bjsvwjek/code/p-abbaustellen/ilimerge/appdata_app1geo2.xtf: SO_AGI_MERGETEST.Abbaustellen BID=bX
+    Info:       1 objects in CLASS SO_AGI_MERGETEST.Abbaustellen.Abbaustelle
+    Info: /home/bjsvwjek/code/p-abbaustellen/ilimerge/geodata_exported.xtf: SO_AGI_MERGETEST.Abbaustellen BID=9
+    Info:       2 objects in CLASS SO_AGI_MERGETEST.Abbaustellen.Geometrie
+    Info: ...validation failed
+
+
 
