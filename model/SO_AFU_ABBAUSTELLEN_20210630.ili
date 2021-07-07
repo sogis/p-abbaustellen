@@ -1,0 +1,118 @@
+INTERLIS 2.3;
+
+/** !! Seitenwagenmodell fuer die Fachapplikation
+ * !! Abbaustellen.
+ * !! Auf die Verwendung von UUIDOID wurde aufgrund des
+ * !! Anwendungsfalles bewusst verzichtet.
+ * !! In den Attributen mit Suffix _Code sind die in der Fachapplikation
+ * !! vergebenen Codes enthalten.
+ * !!------------------------------------------------------------------------------
+ * !! Version    | wer | Aenderung
+ * !!------------------------------------------------------------------------------
+ * !! 2021-06-30 | OJ  | Initial erstellt.
+ */
+!!@ technicalContact=mailto:agi@so.ch
+MODEL SO_AFU_ABBAUSTELLEN_20210630 (de)
+AT "http://geo.so.ch/models/AFU/"
+VERSION "2021-06-30"  =
+
+  IMPORTS GeometryCHLV95_V1;
+
+  TOPIC GIS =
+    OID AS INTERLIS.UUIDOID;
+
+    /** Geometrie zu einer Abbaustelle. Getrennte Erfassung (Fachanwendung - Desktop-GIS)
+    */
+    CLASS Geometrie =
+      MPoly : MANDATORY GeometryCHLV95_V1.MultiSurface;
+    END Geometrie;
+
+  END GIS;
+
+  TOPIC Fachapplikation =
+    OID AS INTERLIS.UUIDOID;
+    DEPENDS ON SO_AFU_ABBAUSTELLEN_20210630.GIS;
+
+    /** Attribute der Abbaustelle (aus Fachapplikation).
+     * Wo in der Fachapplikation codierte Werte vorliegen, ist für
+     * ein Attribut jeweils _Text und _Code vorhanden.
+     * 
+     * _Text: Klartext-Bezeichnung für die Anzeige (Featureinfo, ..)
+     * _Code: Code für Darstellungskonfiguration, ...
+     */
+    CLASS Abbaustelle =
+
+      /* Sprechender Name der Abbaustelle
+       */
+      Bezeichnung : MANDATORY TEXT*256;
+      
+      /* AfU-interne Aktennummer der Abbaustelle
+       * Immer in der Form xxx.xxx.xxx formatiert.
+       */
+      Aktennummer : MANDATORY TEXT*50;
+
+      /* Standortgemeinde der Abbaustelle.
+       */
+      Gemeinde_Text : MANDATORY TEXT*256;
+      Gemeinde_Code : MANDATORY TEXT*50;
+
+      /* Typ der Abbaustelle in Bezug auf die Rohstoffart und 
+       * die Kategorie im Richtplan.
+       * Beispiele:
+       * Ausgangslage Tongrube, Zwischenergebnis Tongrube, Vororientierung Kiesgrube
+       *
+      Art_Text : TEXT*256;
+      Art_Code : TEXT*50;
+
+      /* Stand (Phase) im Lebenszyklus
+       * Beispiele:
+       * Ausgangslage Tongrube, Zwischenergebnis Tongrube, Vororientierung Kiesgrube
+       */
+      Stand_Text : TEXT*256;
+      Stand_Code : TEXT*50;
+
+      /* Abgebautes Material (Kies, Kalkstein, Ton, ...)
+       */
+      Rohstoffart_Text : TEXT*256;
+      Rohstoffart_Code : TEXT*50;
+
+      /* Ist für diese Abbaustelle ein Gestaltungsplan vorhanden?
+       */
+      GestaltungsplanVorhanden : MANDATORY BOOLEAN;
+
+      /* Nummer des Abbaugebeites im kant. Richtplan
+       */
+      Richtplannummer : TEXT*50;
+
+      /* Nummer des Abbaugebeites im kant. Richtplan
+       */
+      Richtplannummer : TEXT*50;
+
+      Richplan-Darstellung	Angabe für die Darstellung der Punktsymbole "Abbaugebiet" in der Richtplan-Karte
+
+      /* Im Richtplan darzustellender Stand (bestehend, Erweiterung, ...)
+       * Im Excel-Objektkatalog als Richtplan-Darstellung notiert.
+       */
+      StandRichtplan_Text : TEXT*256;
+      StandRichtplan_Code : TEXT*50;
+
+      /* Nummer des Regierungsratsbeschlusses zur Genehmigung des Gestaltungsplans
+       */
+      RRB_Nr : TEXT*50;
+
+      /* Datum des Regierungsratsbeschlusses zur Genehmigung des Gestaltungsplans
+       */
+      RRB_Datum :	INTERLIS.XMLDate;
+
+      END Abbaustelle;
+
+    /** Verknüpfung zwischen genau einer Abbaustelle und einer Geometrie.
+    */
+    ASSOCIATION Abbaustelle_Geometrie =
+      Geometrie (EXTERNAL) -- {1} SO_AFU_ABBAUSTELLEN_20210630.GIS.Geometrie;
+      Abbaustelle -- {1} Abbaustelle;
+    END Abbaustelle_Geometrie;
+
+  END Fachapplikation;
+
+END SO_AFU_ABBAUSTELLEN_20210630.
