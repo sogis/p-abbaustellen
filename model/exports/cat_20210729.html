@@ -1,0 +1,189 @@
+<HTML>
+<HEAD>
+<TITLE>Object catalog of the package SO_AFU_ABBAUSTELLEN_20210630</TITLE>
+<STYLE TYPE='text/css'>A {text-decoration: none }TD{border-bottom: solid black; border-bottom-width: 1px}</STYLE></HEAD>
+<body link="#000000" vlink="#000000" alink="#000000">
+<font face="Arial">
+<H1>Contents</H1>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#1_SO_AFU_ABBAUSTELLEN_20210630">1 SO_AFU_ABBAUSTELLEN_20210630</a></p>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#1.1_Packages">1.1 Packages</a></p>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2_Fachapplikation">2 Fachapplikation</a></p>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.1">2.1 Classes</a></p>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.2_Abbaustelle">2.2 Abbaustelle</a></P>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.3_Art_Code">2.3 Art_Code</a></P>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.4_Rohstoffart_Code">2.4 Rohstoffart_Code</a></P>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.5_Stand_Code">2.5 Stand_Code</a></P>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#3_GIS">3 GIS</a></p>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#3.1">3.1 Classes</a></p>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#3.2_Geometrie">3.2 Geometrie</a></P>
+</font>
+<font face="Arial">
+<H1>Package structure</H1>
+<p style="text-indent:0.0cm; line-height: 15%; margin-left: 0"><a href="#1_SO_AFU_ABBAUSTELLEN_20210630">1 SO_AFU_ABBAUSTELLEN_20210630</a></p>
+<p style="text-indent:0.5cm; line-height: 15%; margin-left: 0"><a href="#2_Fachapplikation">2 Fachapplikation</a></p>
+<p style="text-indent:1.0cm; line-height: 15%; margin-left: 0"><a href="#2.2_Abbaustelle">2.2 Abbaustelle</a></p>
+<p style="text-indent:1.0cm; line-height: 15%; margin-left: 0"><a href="#2.3_Art_Code">2.3 Art_Code</a></p>
+<p style="text-indent:1.0cm; line-height: 15%; margin-left: 0"><a href="#2.4_Rohstoffart_Code">2.4 Rohstoffart_Code</a></p>
+<p style="text-indent:1.0cm; line-height: 15%; margin-left: 0"><a href="#2.5_Stand_Code">2.5 Stand_Code</a></p>
+<p style="text-indent:0.5cm; line-height: 15%; margin-left: 0"><a href="#3_GIS">3 GIS</a></p>
+<p style="text-indent:1.0cm; line-height: 15%; margin-left: 0"><a href="#3.2_Geometrie">3.2 Geometrie</a></p>
+</font>
+<font face="Arial">
+<H1><a name="1_SO_AFU_ABBAUSTELLEN_20210630">1 SO_AFU_ABBAUSTELLEN_20210630</a></H1>
+<P>!!</P><P>!! Modell f&uuml;r den Import der Fachapplikationsdaten mittels xtf</P><P>!! (Topic Fachapplikation).</P><P>!! In der Topic GIS ist die referenzierte Geometrie modelliert,</P><P>!! deren Master-Daten sind in der Edit-DB zuhause.</P><P>!!------------------------------------------------------------------------------</P><P>!! Version    | wer | Aenderung</P><P>!!------------------------------------------------------------------------------</P><P>!! 2021-06-30 | OJ  | Initial erstellt.</P><P>!! 2021-07-29 | OJ  | Modellierung der Aufzaelungen (Codierungen)</P>
+<H2><a name="1.1_Packages">1.1 Packages</a></H2>
+<UL>
+<LI><a href="#2_Fachapplikation">Fachapplikation</a></LI>
+<LI><a href="#3_GIS">GIS</a></LI>
+</UL>
+<H1><a name="2_Fachapplikation">2 Fachapplikation</a></H1>
+
+<H2><a name="2.1">2.1 Classes</a></H2>
+<UL>
+<LI><a href="#2.2_Abbaustelle">Abbaustelle</a></LI>
+<LI><a href="#2.3_Art_Code">Art_Code</a></LI>
+<LI><a href="#2.4_Rohstoffart_Code">Rohstoffart_Code</a></LI>
+<LI><a href="#2.5_Stand_Code">Stand_Code</a></LI>
+</UL>
+<H2><a name="2.2_Abbaustelle">2.2 Abbaustelle</a></H2>
+<P>Attribute der Abbaustelle (aus Fachapplikation).</P>
+<TABLE border="0" frame=hsides roles=rows cellspacing="0" cellpadding="5" height="1">
+<COL>
+<COL>
+<COL>
+<COL>
+<TR><TD width="85" bgcolor="#C0C0C0" align="left"><font face="Arial">Name</font></TD>
+<TD width="125" bgcolor="#C0C0C0" align="left"><font face="Arial">Cardinality</font></TD>
+<TD width="111"bgcolor="#C0C0C0" align="left"><font face="Arial">Type</font></TD>
+<TD widht="135"bgcolor="#C0C0C0" align="left"><font face="Arial">Description</font></TD></TR>
+<TR><TD  STYLE="border-top: solid black; border-top-width: 2px">Bezeichnung</TD><TD  STYLE="border-top: solid black; border-top-width: 2px">1</TD><TD  STYLE="border-top: solid black; border-top-width: 2px">String</TD><TD  STYLE="border-top: solid black; border-top-width: 2px"><P>Sprechender Name der Abbaustelle</P></TD></TR>
+<TR><TD >Aktennummer</TD><TD >1</TD><TD >String</TD><TD ><P>AfU-interne Aktennummer der Abbaustelle</P><P>Immer in der Form xxx.xxx.xxx formatiert.</P></TD></TR>
+<TR><TD >Gemeinde_Name</TD><TD >1</TD><TD >String</TD><TD ><P>Standortgemeinde der Abbaustelle - Name.</P></TD></TR>
+<TR><TD >Gemeinde_Bfs</TD><TD >0..1</TD><TD >0..9999</TD><TD ><P>Standortgemeinde der Abbaustelle - BFS-Nummer.</P></TD></TR>
+<TR><TD >Art</TD><TD >0..1</TD><TD >Art_Code</TD><TD ><P>Typ der Abbaustelle in Bezug auf die Rohstoffart und</P><P>die Kategorie im Richtplan.</P></TD></TR>
+<TR><TD >Stand</TD><TD >0..1</TD><TD >Stand_Code</TD><TD ><P>Stand (Phase) im Lebenszyklus</P></TD></TR>
+<TR><TD >Rohstoffart</TD><TD >0..1</TD><TD >Rohstoffart_Code</TD><TD ><P>Abgebautes Material (Kies, Kalkstein, Ton, ...)</P></TD></TR>
+<TR><TD >GestaltungsplanVorhanden</TD><TD >1</TD><TD >Boolean</TD><TD ><P>Ist f&uuml;r diese Abbaustelle ein Gestaltungsplan vorhanden?</P></TD></TR>
+<TR><TD >Richtplannummer</TD><TD >0..1</TD><TD >String</TD><TD ><P>Nummer des Abbaugebeites im kant. Richtplan</P></TD></TR>
+<TR><TD >StandRichtplan</TD><TD >0..1</TD><TD >Stand_Code</TD><TD ><P>Im Richtplan darzustellender Stand (bestehend, Erweiterung, ...)</P><P>Im Excel-Objektkatalog als Richtplan-Darstellung notiert.</P></TD></TR>
+<TR><TD >RRB_Nr</TD><TD >0..1</TD><TD >String</TD><TD ><P>Nummer des Regierungsratsbeschlusses zur Genehmigung des Gestaltungsplans</P></TD></TR>
+<TR><TD >RRB_Datum</TD><TD >0..1</TD><TD >XMLDate</TD><TD ><P>Datum des Regierungsratsbeschlusses zur Genehmigung des Gestaltungsplans</P></TD></TR>
+<TR><TD STYLE="border-top: solid black; border-top-width: 2px">Geometrie</TD><TD STYLE="border-top: solid black; border-top-width: 2px">1</TD><TD STYLE="border-top: solid black; border-top-width: 2px">Geometrie</TD><TD STYLE="border-top: solid black; border-top-width: 2px"></TD></TR>
+</TABLE>
+<H2><a name="2.3_Art_Code">2.3 Art_Code</a></H2>
+
+<TABLE border="0" frame=hsides roles=rows cellspacing="0" cellpadding="5" height="1">
+<COL>
+<COL>
+<COL>
+<COL>
+<TR><TD width="85" bgcolor="#C0C0C0" align="left"><font face="Arial">Name</font></TD>
+<TD widht="135"bgcolor="#C0C0C0" align="left"><font face="Arial">Description</font></TD></TR>
+<TR><TD>AusgangslageKiesgrube</TD><TD></TD></TR>
+<TR><TD>FestsetzungKiesgrube</TD><TD></TD></TR>
+<TR><TD>ZwischenergebnisKiesgrube</TD><TD></TD></TR>
+<TR><TD>AusgangslageSteinbruch</TD><TD></TD></TR>
+<TR><TD>FestsetzungSteinbruch</TD><TD></TD></TR>
+<TR><TD>ZwischenergebnisSteinbruch</TD><TD></TD></TR>
+<TR><TD>AusgangslageTongrube</TD><TD></TD></TR>
+<TR><TD>FestsetzungTongrube</TD><TD></TD></TR>
+<TR><TD>ZwischenergebnisTongrube</TD><TD></TD></TR>
+<TR><TD>VororientierungKiesgrube</TD><TD></TD></TR>
+<TR><TD>VororientierungSteinbruch</TD><TD></TD></TR>
+<TR><TD>VororientierungTongrube</TD><TD></TD></TR>
+<TR><TD>Kleinabbaustelle</TD><TD></TD></TR>
+</TABLE>
+<H2><a name="2.4_Rohstoffart_Code">2.4 Rohstoffart_Code</a></H2>
+
+<TABLE border="0" frame=hsides roles=rows cellspacing="0" cellpadding="5" height="1">
+<COL>
+<COL>
+<COL>
+<COL>
+<TR><TD width="85" bgcolor="#C0C0C0" align="left"><font face="Arial">Name</font></TD>
+<TD widht="135"bgcolor="#C0C0C0" align="left"><font face="Arial">Description</font></TD></TR>
+<TR><TD>Kies</TD><TD></TD></TR>
+<TR><TD>Kalkstein</TD><TD></TD></TR>
+<TR><TD>Ton</TD><TD></TD></TR>
+<TR><TD>Gehaengeschutt</TD><TD></TD></TR>
+</TABLE>
+<H2><a name="2.5_Stand_Code">2.5 Stand_Code</a></H2>
+
+<TABLE border="0" frame=hsides roles=rows cellspacing="0" cellpadding="5" height="1">
+<COL>
+<COL>
+<COL>
+<COL>
+<TR><TD width="85" bgcolor="#C0C0C0" align="left"><font face="Arial">Name</font></TD>
+<TD widht="135"bgcolor="#C0C0C0" align="left"><font face="Arial">Description</font></TD></TR>
+<TR><TD>Richtplan</TD><TD></TD></TR>
+<TR><TD>Bewilligt</TD><TD></TD></TR>
+<TR><TD>InAbbau</TD><TD></TD></TR>
+<TR><TD>NurAuffuellung</TD><TD></TD></TR>
+<TR><TD>Inaktiv</TD><TD></TD></TR>
+<TR><TD>Abgeschlossen</TD><TD></TD></TR>
+</TABLE>
+<H1><a name="3_GIS">3 GIS</a></H1>
+
+<H2><a name="3.1">3.1 Classes</a></H2>
+<UL>
+<LI><a href="#3.2_Geometrie">Geometrie</a></LI>
+</UL>
+<H2><a name="3.2_Geometrie">3.2 Geometrie</a></H2>
+<P>Geometrie zu einer Abbaustelle. Getrennte Erfassung (Fachanwendung - Desktop-GIS)</P>
+<TABLE border="0" frame=hsides roles=rows cellspacing="0" cellpadding="5" height="1">
+<COL>
+<COL>
+<COL>
+<COL>
+<TR><TD width="85" bgcolor="#C0C0C0" align="left"><font face="Arial">Name</font></TD>
+<TD width="125" bgcolor="#C0C0C0" align="left"><font face="Arial">Cardinality</font></TD>
+<TD width="111"bgcolor="#C0C0C0" align="left"><font face="Arial">Type</font></TD>
+<TD widht="135"bgcolor="#C0C0C0" align="left"><font face="Arial">Description</font></TD></TR>
+<TR><TD  STYLE="border-top: solid black; border-top-width: 2px">MPoly</TD><TD  STYLE="border-top: solid black; border-top-width: 2px">1</TD><TD  STYLE="border-top: solid black; border-top-width: 2px"></TD><TD  STYLE="border-top: solid black; border-top-width: 2px"></TD></TR>
+<TR><TD STYLE="border-top: solid black; border-top-width: 2px">Abbaustelle</TD><TD STYLE="border-top: solid black; border-top-width: 2px">1</TD><TD STYLE="border-top: solid black; border-top-width: 2px">Abbaustelle</TD><TD STYLE="border-top: solid black; border-top-width: 2px"></TD></TR>
+</TABLE>
+</font>
+<font face="Arial">
+<H1>Index of the model elements</H1>
+<font face="Arial" size="3">
+<p>
+  <a href="#Abbaustelle"><u>A&nbsp;</u></a>
+  B&nbsp;
+  C&nbsp;
+  D&nbsp;
+  E&nbsp;
+  <a href="#Fachapplikation"><u>F&nbsp;</u></a>
+  <a href="#GIS"><u>G&nbsp;</u></a>
+  H&nbsp;
+  I&nbsp;
+  J&nbsp;
+  K&nbsp;
+  L&nbsp;
+  M&nbsp;
+  N&nbsp;
+  O&nbsp;
+  P&nbsp;
+  Q&nbsp;
+  <a href="#Rohstoffart_Code"><u>R&nbsp;</u></a>
+  <a href="#SO_AFU_ABBAUSTELLEN_20210630"><u>S&nbsp;</u></a>
+  T&nbsp;
+  U&nbsp;
+  V&nbsp;
+  W&nbsp;
+  X&nbsp;
+  Y&nbsp;
+  Z&nbsp;
+</p></font>
+<br>
+<p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.2_Abbaustelle" name="Abbaustelle">Abbaustelle 2.2</a>
+</p><p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.3_Art_Code" name="Art_Code">Art_Code 2.3</a>
+</p><p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2_Fachapplikation" name="Fachapplikation">Fachapplikation 2</a>
+</p><p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#3_GIS" name="GIS">GIS 3</a>
+</p><p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#3.2_Geometrie" name="Geometrie">Geometrie 3.2</a>
+</p><p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.4_Rohstoffart_Code" name="Rohstoffart_Code">Rohstoffart_Code 2.4</a>
+</p><p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#1_SO_AFU_ABBAUSTELLEN_20210630" name="SO_AFU_ABBAUSTELLEN_20210630">SO_AFU_ABBAUSTELLEN_20210630 1</a>
+</p><p style="text-indent: 0; line-height: 15%; margin-left: 0"><a href="#2.5_Stand_Code" name="Stand_Code">Stand_Code 2.5</a>
+</font>
+</BODY>
+</HTML>
