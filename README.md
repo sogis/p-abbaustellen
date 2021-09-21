@@ -4,6 +4,14 @@
 
 ![Integrationsdiagramm](integration.png)
 
+## Schritte des GRETL-Imports
+
+1. XTF mittels API von Fachapp beziehen
+1. XTF gegen Modell prüfen
+    * Geodaten auch exportieren
+    * Beide XTF gegen Modell prüfen
+1. Falls Prüfung OK: Fachapp-XTF mittels ili2pg importieren
+
 ## Verknüpfen der Sach- und Geometriedaten 
 
 Beim Import der Sachdaten in die Geodatenbank soll sichergestellt werden, dass es weder Geometrien ohne Sachdaten-Objekt, noch Sachdaten-Objekte ohne Geometrien gibt.
