@@ -37,3 +37,7 @@ Anpassung von Dummy-Datenwerten. Diese sind nach erfolgter Datenmigration nicht 
 * Auf Kommandozeile ausführen. Falls Unix-basiertes System siehe validate.sh
 * Ende des Kommandozeilen-Outputs bei Erfolg:  
 `Info: ...validation done`
+
+## Schnittstellenaufruf zum Abholen des XTF
+
+https://test-so.softec.ch/abbaustellen/api/gis/export.xml?token=[xxx]
