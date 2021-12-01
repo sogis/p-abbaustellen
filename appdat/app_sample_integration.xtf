@@ -10,7 +10,7 @@
     </MODELS>
   </HEADERSECTION>
   <DATASECTION>
-    <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation BID="-99">
+    <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation BID="4">
       <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="10787f25-36d9-4d0c-9eb2-ba279bbf9aaa">
         <Bezeichnung>my_bezeichnung</Bezeichnung>
         <Aktennummer>my_num</Aktennummer>
