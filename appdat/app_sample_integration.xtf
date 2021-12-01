@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION SENDER="ili2pg-4.3.1-23b1f79e8ad644414773bb9bd1a97c8c265c5082" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="Units" VERSION="2012-02-20" URI="http://www.interlis.ch/models"></MODEL>
+      <MODEL NAME="CoordSys" VERSION="2015-11-24" URI="http://www.interlis.ch/models"></MODEL>
+      <MODEL NAME="GeometryCHLV03_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"></MODEL>
+      <MODEL NAME="GeometryCHLV95_V1" VERSION="2017-12-04" URI="http://www.geo.admin.ch"></MODEL>
+      <MODEL NAME="SO_AFU_ABBAUSTELLEN_20210630" VERSION="2021-06-30" URI="http://geo.so.ch/models/AFU/"></MODEL>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation BID="-99">
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="10787f25-36d9-4d0c-9eb2-ba279bbf9aaa">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>AusgangslageKiesgrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="10787f25-36d9-4d0c-9eb2-ba279bbf9aaa"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="31e64ca1-fd7a-4629-8a61-dc2c49e8b875">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>FestsetzungKiesgrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="31e64ca1-fd7a-4629-8a61-dc2c49e8b875"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="7ef1724d-aa3d-4740-bcbd-8e86f9f19c51">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>ZwischenergebnisKiesgrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="7ef1724d-aa3d-4740-bcbd-8e86f9f19c51"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="ff00b3ee-2e41-4e72-886a-ef3c741783f5">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>AusgangslageSteinbruch</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="ff00b3ee-2e41-4e72-886a-ef3c741783f5"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="77f5dfe5-5c37-408b-969a-b097f776ba82">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>FestsetzungSteinbruch</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="77f5dfe5-5c37-408b-969a-b097f776ba82"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="28d08287-3fa1-43ea-9c27-c023f8648963">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>ZwischenergebnisSteinbruch</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="28d08287-3fa1-43ea-9c27-c023f8648963"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="c09aadf7-bfba-4984-acd3-914097276f21">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>AusgangslageTongrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="c09aadf7-bfba-4984-acd3-914097276f21"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="400f3af4-9d2f-4676-8ced-dc9499aabe0d">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>FestsetzungTongrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="400f3af4-9d2f-4676-8ced-dc9499aabe0d"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="8b4e2fc3-94d6-4790-b02c-46a0718f48ad">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>ZwischenergebnisTongrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="8b4e2fc3-94d6-4790-b02c-46a0718f48ad"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="938253ce-77ca-4ca1-9919-4bad59c862ce">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>VororientierungKiesgrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="938253ce-77ca-4ca1-9919-4bad59c862ce"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="3f4ad139-0a0c-45c0-8648-913c51cdcf34">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>VororientierungSteinbruch</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="3f4ad139-0a0c-45c0-8648-913c51cdcf34"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="048bcab0-30d5-4990-9d34-9f640cdadbcd">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>VororientierungTongrube</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="048bcab0-30d5-4990-9d34-9f640cdadbcd"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+      <SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle TID="2954e820-5740-4551-b954-288a56e51d4d">
+        <Bezeichnung>my_bezeichnung</Bezeichnung>
+        <Aktennummer>my_num</Aktennummer>
+        <Gemeinde_Name>mordor</Gemeinde_Name>
+        <Gemeinde_Bfs>99</Gemeinde_Bfs>
+        <Art>Kleinabbaustelle</Art>
+        <Stand>Bewilligt</Stand>
+        <Rohstoffart>Kalkstein</Rohstoffart>
+        <GestaltungsplanVorhanden>true</GestaltungsplanVorhanden>
+        <Richtplannummer>my_num</Richtplannummer>
+        <StandRichtplan>Bewilligt</StandRichtplan>
+        <RRB_Nr>my_num</RRB_Nr>
+        <RRB_Datum>2021-02-15</RRB_Datum>
+        <Geometrie REF="2954e820-5740-4551-b954-288a56e51d4d"></Geometrie>
+      </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation.Abbaustelle>
+    </SO_AFU_ABBAUSTELLEN_20210630.Fachapplikation>
+  </DATASECTION>
+</TRANSFER>

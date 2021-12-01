@@ -5,6 +5,8 @@ INTERLIS 2.3;
  * !! (Topic Fachapplikation).
  * !! In der Topic GIS ist die referenzierte Geometrie modelliert,
  * !! deren Master-Daten sind in der Edit-DB zuhause.
+ * !! Im Topic Fachapplikation sind die Attribute des Xtf-Export
+ * !! aus der Fachapplikation beschrieben.
  * !!------------------------------------------------------------------------------
  * !! Version    | wer | Aenderung
  * !!------------------------------------------------------------------------------

@@ -44,3 +44,22 @@ Fragen Markus:
     * GIS-seitig werden die Polygone automatisch migriert
     * Ergänzung, Verknüpfung muss manuell vom AfU gemacht werden.
 
+
+# Scratch
+
+## Schema
+
+./start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network schema-jobs_default --topic-name afu_abbaustellen --schema-dirname schema_pub dropSchema createSchema configureSchema grantPrivileges
+
+./start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network schema-jobs_default --topic-name afu_abbaustellen --schema-dirname schema_pub  createRolesDevelopment
+
+## Data
+
+
+
+./start-gretl.sh --docker-image sogis/gretl-runtime:latest --docker-network schema-jobs_default --job-directory $PWD/afu_abbaustellen_pub
+
+/home/bjsvwjek/code/p-abbaustellen/allgretl/gretl_import/afu_abbaustellen_pub/build.gradle
+
+
+export ORG_GRADLE_PROJECT_appUrlAbbaustellen=
